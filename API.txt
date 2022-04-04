@@ -1,0 +1,23 @@
+Applications - 3tier -1)presentation layer (name , gmail, first name , last name etc)-GUI Testing
+                      2)Business layer-(logic of main code)-API testing
+                        CRUD operations occurs here-Create, Retrive, Update,  delete
+                         3)Data Layer
+Request estey - response echey de api
+-Application programeing interface  
+-Additional functionalitys use cheysukovataki ede use cheystham                     
+API-Different functionalities from various applications nunde kavali untey we use API
+API Testing types:
+Unit Testing
+	Functional Testing
+Load Testing
+Runtime
+Security
+UI Testing
+Penetration Testing
+Fuzz 
+
+Methods:
+-Get-retrive
+-Put-ntg but update
+-Post- ntg but create
+-Delete

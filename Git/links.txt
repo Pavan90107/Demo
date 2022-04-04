@@ -1,0 +1,2 @@
+https://docs.appian.com/suite/help/21.3/CDT_Relationships.html
+https://docs.appian.com/suite/help/21.3/Database_Schema_Best_Practices.html

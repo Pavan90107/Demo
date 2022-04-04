@@ -1,0 +1,38 @@
+1)Definition of done?
+2)All users
+  admins
+  employes-need set order
+3)no.of pages in a site-5
+4)If a person wants to delete  record what permission will u give?
+5)product owner? releated question
+6)initiate,build,release,optimise-set order
+7)triggers question (time)?- Daily,manual
+8)given one code what will be output?
+   answer:name,email
+9)unique key-combaine two tables
+10)dropdown questions
+   like:1)readonly
+        2)disabled
+        3)masked
+        4)etc
+11)one more drop down releated records
+12)expression rule Naming ?
+13)APP Prefix--nameing convention
+14)sources of records creation?
+15)interface in interface like this one question? 
+16)Custom Data Center (answer) forget question?
+17)a!startprocesslink,a!startprocess questions on these?
+18)dynamic link releated question?
+19)select,update,edit,delete releated questions?
+20)set the code in order? 
+21)question: which will you select,,,?
+      answer:1)ask community
+             2)custom data center
+             two more options
+22)security questions- 2-3 questions
+23)SDLC 1-2 questions
+
+
+    
+
+  

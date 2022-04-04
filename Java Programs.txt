@@ -1,0 +1,113 @@
+Constructor Program:
+
+//Main Class
+public class Main {
+
+int a;
+//Constructor
+public Main(){
+
+a=11;
+}
+//Main Method
+public static void main(String[] args){
+Main obj = new Main();
+System.out.println(obj.a);
+}
+
+}
+
+Method Overloading program:
+//Main class
+class MethodOverloading{
+//Method with parameters 
+int add(int a, int b)
+{
+return a+b;
+//Same method with diff parameter
+int add(int a, int b, int c)
+{
+return a+b+c;//For method overloading return type should be same or diff
+}
+}
+public class Demo
+{
+//Main method
+public static void main(String args[])
+{
+//Object
+MethodOverloading obj= new Methodoverloading();
+System.out.println("sum" +obj.add(2,6));
+System.out.println("sum" +obj.add(2,,4,8));
+}
+}
+
+Constructor overloading:
+
+package over;
+
+public class ConstructorOverloading {
+	
+	int a;
+	char c;
+	//Constructor name should be same as class name
+	public ConstructorOverloading(){
+
+	a=11;
+	}
+	//Same method name
+	 public ConstructorOverloading(char c)  
+	    {
+		 System.out.println(c);
+	    }
+	//Main Method
+	public static void main(String[] args){
+		//Object
+	ConstructorOverloading obj = new ConstructorOverloading();
+	System.out.println(obj.a);
+	System.out.println('o');
+	
+	}
+
+
+}
+
+
+
+
+
+package over;
+DataTypes and Methods:program
+public class Program1 {
+	
+	public static class Datatypes {
+		//Data Types
+		int a=1;
+		double b=10.0;
+		char c='P';
+		String d="Pavan";
+		
+		//Method1
+		public void sum() {
+		System.out.println(a+b);
+		}
+		//Method2
+		public void display() {
+			System.out.println(c);
+			System.out.println(d);
+		}
+		
+		//Main method
+		public static void main(String[] args) {
+		//Object 
+		Datatypes dp= new Datatypes();
+		//Calling
+		dp.sum();
+		dp.display();
+		}
+
+		}
+
+
+
+}

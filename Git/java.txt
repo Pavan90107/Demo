@@ -1,0 +1,207 @@
+java: 
+JVM-java virtval machine
+JRE-java runtime environment
+JDK-java development kit
+
+variables: storage area.
+literals: 1.25, 1, f the values which we can not change
+
+
+java input:To use scanner we use (import java.util.scanner);
+
+// create an object of Scanner(single line comment)
+/* This is an example of  multi-line comment.
+ * The program prints "Hello, World!" to the standard output.
+ */
+Scanner input = new Scanner(System.in);
+
+
+int number = input.nextInt();
+
+
+java output:
+
+system.out.printl-if we use it means cursor will come nest line end of output
+ or
+system.out.print()-cursor will stay at same line of output
+  or
+system.out.printf()
+
+-It is used to develop desktop, and mobile applications,games
+-java is object oriented programme language
+
+Datatypes in Java:
+
+Primitive datatypes:
+-Boolean-Boolean(true or false)
+-Numeric-char,byte(-128 to 127),short(-32.768 to 32,767),int,long,float,double
+Non primitive datatypes:
+-string,array,etc
+
+Operators:
+-Arithmetic 
+ +,-,*,/,%
+-Assignment
+=+,=-,=*,=/,=%
+-Relational
+<,>,<=,>=,!=,==
+-logical
+&&,||,!
+-unary
+-+,-,++,--,!
+-Bitwise
+~,<<,>>,>>>,&,^
+statements:
+decision making statements:
+-if statement
+-switch statement
+
+loopstatements
+-do while loop
+-whileloop
+-forloop
+-for ecah loop
+jump statements
+-break statements 
+-continue statements
+basic program:
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+
+2)class Output {
+    public static void main(String[] args) {
+        System.out.println("1. println ");
+        System.out.print("1. print ");
+    }
+    }
+3)class IfStatement {
+    public static void main(String[] args) {
+        int number = 10;
+        
+        if (number < 0) {
+        System.out.println("Negative");
+        }
+        System.out.println("Positive");
+    }
+        }
+
+Array:
+class Main {
+    public static void main(String[] args) {
+        int[] age = {12,4,5,2,5};
+        
+      
+        System.out.println("Array:");
+          System.out.println("First:" + age[0]);
+            System.out.println("Second:" + age[1]);  
+            System.out.println("Third:" + age[2]);
+        
+    }
+        }
+    
+forloop:
+class Main {
+    public static void main(String[] args) {
+        int[] age = {12,4,5};
+        
+      
+        System.out.println("Array:");
+         
+            for(int i=0; i < age.length; i++) { 
+            System.out.println(age[i]);
+            }  
+    }
+        }
+    
+multidimensional array:
+
+class MultidimensionalArray {
+    public static void main(String[] args) {
+        int[][] a = {
+            {1,2,3},
+            {4,5,6,9},
+            {7},
+        };
+            System.out.println("length:" + a[0].length);
+          System.out.println("length:" + a[1].length);
+           System.out.println("length:" + a[2].length);
+           
+    }
+        }
+    
+string manucalation
+
+   concatination of two strings:
+class Sample_String {
+    public static void main(String[] args) {
+        String str1 = "Rock" ;
+        String str2 = "Star" ;
+        String str3 = str1.concat(str2);
+        
+           System.out.println(str3) ; 
+           
+           
+    }
+        }
+    
+   length of string:
+
+class Sample_String {
+    public static void main(String[] args) {
+       
+        String str = "pavankumar";
+        
+           System.out.println("Length of string: " + str.length()); 
+           
+           
+    }
+        }
+     
+}
+
+
+OOPS:
+Object Oriented programming concepts
+
+Class: It is blue print or template
+example:Fruit
+Object:An entity that has state and behaviour
+object:apple,orange,banana
+Encapsulation:process of binding both variables and methods in single entity
+-using this we can improve application maintainence
+example:capsule
+Inhertance:
+adding new class in already existing class
+-using this we can reduce code size
+polymorphism:It is single entity shows multiple behaviours
+-method overloading
+-method over riding comes under this
+
+Exception handling:
+-problem during execution is called
+    -code error
+    -compile time exception
+      IOException
+      File Not Found Exception
+    -Run time exception
+       Nullpointer
+       Arithmetic
+5keywords:
+try
+catch
+throw
+throws
+finally
+
+statements:
+
+if program
+
+
+class ,,
+psvm(string[] args);
+int number=25;
+if(number<0)

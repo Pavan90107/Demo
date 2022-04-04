@@ -1,0 +1,625 @@
+user storie- test plan(requird document testing), test scenario(what to test), test case(how to test)
+in manual we called test cases
+in automation we called them as test scripts
+
+
+
+Introduction to HSBC:
+
+-British Multinational investment bank in UK
+-Hitendra Dev is current CEO
+-Head office in mumbai(pune,hyderabad)
+
+Work Culture:
+
+-Healthy WorkCulture
+-Learning enivironment
+-Healthy competition to upgrade 
+-quallity of work and life
+-Balanced work life
+-Time to Time sessions about feedback 
+-Transparency in system
+-Training and certifications
+
+HSBC DEV/QA PROCESS:
+
+-Business analyst- gather Requirments- it will send DEV/QA Team
+-DEV Team develope process
+-QA Team develope test cases
+-Once Dev team complete the process - They will send to QA team - Then QA team will test it and save results
+
+IF
+  -QA Team got any errors or bugs then they will send it to DEV Team
+  -Then DEV TEAM will again work on it 
+  -After QA again test it CYCLE Goes until bugs rectifyed
+  -IF
+     Every Thing OK means QA team will Create Test Closure Report.
+     Finallysend green flag to end user
+
+Tools Used in HSBC
+
+-Selenium
+-Java
+-Cucumber
+-Testng/Junit
+-Maven
+-Jenkins(CI/CD)
+-Jira
+-GitHub
+-confluence
+-IntelJ IDEA
+
+q:Why we se manual instead of automation testing?
+A:First we ansure weather the things working manually first
+  -We can not achieve 100percent testing with automation so we use manual
+  -To check colour of UI etc we need manual it is not possible with automation
+  -When we have big application with more test cases we use automation (to reduce time)
+  -When we have less test cases we use manual testing
+
+Do's and Donot's
+
+----------
+ Firstly we should have requirmently correctly
+
+SOFTWARE TESTING
+
+Definition:
+       - software testing is a method to check wheather actual product meets with expected requirments
+       - To Ensure Defect Free
+       - To Check Wheather it Fit for purpose
+       - Finding  errors at  right time
+
+Why do we need? Roles and Responsibilitys of tester:
+
+-Finding bugs asap and make them sure they fix it
+-To understand application well
+-Finding Errors which occurs commonly
+-Understand application every point of application
+-Every line of code should be tested
+-sometimes we can test things more than requirments
+-testing things more than required like various login and passwords in fb,twitter etc
+
+
+Software testing process
+
+Requirments analysis
+      \
+ Testing planning
+        \
+     Test design 
+          \
+     Environment Setup
+           \
+         Test Execution
+            \
+            Test closure
+
+Software Quality and  Principles:
+
+-Software Qualitys
+       - Improvement of process is nothing but quality
+       - Satisfying customer
+
+examples: Googlepay, Phonepay selecting one 
+
+Principles:
+-Quality-it will effect organisation performance
+-Quality-competiton between organisations
+
+ERRORS
+-Error is a mistake or misunderstanding of requirments this is an be fix by any one like software eng, development team or a tester
+
+BUGS
+A bug is result of coding error, a functional error
+
+DEFECT
+varaince between expected and actual
+
+FAILURE
+
+Inability of software system
+
+DEFECT Life Cycle:
+
+open /new
+    '
+assined
+  '
+    valid'--NO-duplicate or Rejected/dropped
+   '
+Yes
+  '
+Defered---Fix
+           '
+           Fixed
+           completed----fixed----cleared
+           resolved
+
+Reasons for bugs/Defects in software:
+
+-Miscommunication
+-Coding error
+-Not having proper testing setup
+-Absense of version controls
+-Lack of skilled testing/testers
+-Last minute/Time pressure/focus on delivery
+
+SDLC:Software Development Life Cycle
+   lifecycle:requirements 2)analysis 3)design 4)coding 5)testing 6)deployment
+STLE:software testing life cycle
+   1)requirement analysis 2)test planning 3)test design 4)environment setup 5) test execution 6)test closure
+
+verification testing:-Are we building product right?
+                      
+                     -It is static testing
+
+validation testing:-Are we building right product?
+                   -It is dynamic testing
+example:when we go to hotel we order cream cake looking it is verification 
+and validation is eating it
+
+
+
+Levels of Testing:
+-Unit Testing
+-Integration
+-System Testing
+-Acceptance Testing
+
+Unit Testing:
+-Micro Scale of Testing means small testing
+-This testing is done programmers not testers
+-These testing are done by developers
+-For these we need some code knowledge
+-Developers will check this unit testing
+
+Integration Testing:
+-Face book log in page lo log in id, password echaka submit button click cheystey home page ki land aavutam kaada 
+ aa link correct ga unda leyda aane chusey de integration testing
+-integration testing performed after unit testing
+-this is done developers in most cases
+-To check combined parts of applications wheather combined functions working correctly or not.
+
+System Testing:
+-It is performed by testers
+-It has both functional and non functional testings
+-System testing is performed after integration testing before acceptance testing
+-there are many types of system testings like performance testings,load testings;;etc
+-majority of testings is done in this system testings
+
+Acceptance Testing:
+-It final level of software testing
+-It is done by end users
+-It is performed wheather system meet requirments or not
+-In this we have alpha and beta testings
+
+
+Types of Software Testing:
+                          
+1)Manual Testing --1)White Box, 2)BlackBox, 3)Gray Box 
+2)Black Box Testing-- 1)Functional and 2)NonFunctional
+Functional Testing: It will verify functionality of software wheather the application meet particular requirment or not
+Process:
+requirements-plan-Design-traceability matrix(combinations like login id, password valid,invalid, valid ,valid in valid ,valid)-execution-analysis-defect management
+1)FunctionalTesting Types:
+Unit, Integration and system testings, sanity(here we focus new functionality), smoke(here we will focus on documents),regression (we will check both old and new functionality),UI,Accepatance,Alpha,Beta
+2)Non Functional-performancee,usability,compatibility  
+2)Automation
+
+Testing methodologies:
+-Water fall model
+-Agile 
+-V-model
+-Incremental model
+- x3
+
+water fall model:
+progress seen steadily like a waterfall
+process:
+requirements-analysis-design-coding-testing-installation-maintainence
+drawbacks:
+-backtracking is not possible 
+-we can not go back and change requirements
+Non Functional Testing:
+-To check performance, usability,reliability
+-Example:how many people are login simulanteneouly
+
+performance testing
+load testing
+maintainability testing
+security testing
+
+Smoke Testing:
+-Smoke Testing is nothing but testing critical functionalities of application
+-Smoke testing is Build Verification Testing
+-Smoke Testing is done after software building
+Examples:
+It is like general health check over all body
+similarly for application login ,logout,newsfeed,notifications etc
+
+Sanity Testing:
+-Sanity Testing is performed to verify for new functionalities
+-Bugs are working fine he will proceed with actual testing
+-Subset of Regression Testing
+Examples:This is like a specialized health check up
+
+Regression Testing:
+-New functionalities which we add in application can not effect old functionalities this type of testing is nothing but regression testing
+
+Alpha Testing:
+-It is performed by developing orginisation
+
+Beta Testing:
+-It is performed by customers
+
+Acceptance Testing:
+-It is performed by customers to determine wheather to accept or reject 
+
+GUI:Graphical User Interface 
+
+Software Methodologies:
+Water fall model
+Iteratve development
+agile methodlogy
+extreme progrmming
+
+
+Testing tools:
+-with the helping of testing tools we can improve the software performance and we can deliver a quality or high quality product
+
+Types of testing tools:
+-Test Management tool
+-Bug Tracking tool
+-Automated testing tool
+-performance testing tool
+-cross browser tool
+-integration testing tool
+-unit testing tool
+-mobile testing tool, androiad testing tool
+-GUI testing tool
+-security testing tool
+
+DEFECT:
+variation between expected result and actual result
+
+Example:
+login id, password estey invalid aane vestey ade defect                 
+        
+What to do  when defect encountered:
+
+when defect is encountered or discoverd while checking an application it should be reported to development team asap. and also to project manager ,bass , client etc
+when we need to create bug ?
+ Creating a bug report:
+a bug report is detailed document of report
+steps to bug report:
+-Defect ID
+-Description
+-Steps to reproduce
+-status
+-priority(Example: suppose hdfc bank log in details credtials work aavadam leydu so priority and severity is high because with out login to it we can transfer money,etc)
+-severity
+-data raised
+A bug report is generally created in defect managment tool like jira
+
+What is Defect Management?
+ -It is systematic process to identify and fix/close bugs
+ -Defect Management Cycle:
+            1)Discovery
+            2)Categorization
+            3)Defect Resolution
+            4)Defect Restesting
+            5)Defect closure
+
+ Test Coverage:
+how many test cases were executed out of all test cases
+-quality of testing
+-example
+   100 test cases lo 80 test cases test cheysena remaining 20 test cases lo bugs unda vachu so test coverage is not done 100 percent 
+How can we tell wheather requirement covers 100 percent? or not?
+
+RTM:Requirement Tracebility Matrix
+-It is a document that maps and traces user requirements with test cases
+-main purpose is to check all requirments
+-it is a worksheet test cases passed,failed, these would help  to understand the level of testing
+
+Test plan:
+-It is describing software testing scope
+-approach
+-resources
+-sehedule the things
+
+purpose of test plan
+content present in test plan:
+-test plan identifier
+-introduction
+-test items
+-features to be tested
+-features not be tested
+-approach
+-pass/fail criteria
+-suspension criteria
+-test deliverables
+-testing tasks
+-environment needs
+-responsibilites
+-staffing
+-training needs
+-schedule
+-risk
+approvals
+
+Master Test plan:
+-it has multiple test plans
+
+Phase Test plan:
+-it has one test phase
+
+Test Case Design techniques:
+boundary value analysis:
+example:
+enter the age---between 18to35
+min=18
+    18-1=17(fail)
+    18+1=19(pass)
+max=35
+    35-1=34(pass)
+    35+1=36(fail)
+equivalence class partitioning:it saves time for testing
+it divides values in to equivalence classes
+example:
+let us take 1-500 numbers
+divide values into equivalence classes
+-100 to 0
+-1 to 100(invalid)
+-101 to 200-valid
+-201 to 300
+-301 to 400
+-400 to 500
+-501 to 600(invalid)
+
+decision table based testing:                   testcase1    testcase2  testcase3 testcase4 testcase5
+condition1-accounts already approved            true          t
+condition2-otp matched                          true          t
+condition3-suffiencient money in the amount     true          f
+action1-transfer money                           ok
+action2-insuffiecent money                                     ok
+action3-block transition
+
+
+state trnsition:
+hdfc net banking login three times login password wrong estey account lock aavutunde 
+
+error guessing:
+-submitting a form withut entering values
+-entering invalid values suppose entering numbers in aplhabets etc
+
+Boundary Value analysis:
+-for this we use equivalence  partitioning
+lower-higher
+use cases:
+describes requirments( diagrams/ pictures)
+use case diagram
+
+Test scenarios:
+-what to test
+-
+test cases:ntg but document ,expected result, actual result
+-how to test
+-steps to how to test
+-it is set of variables or conditions
+use cases:provides functional description of system
+
+example:
+facebook 
+
+use case:describes requirements of facebook in use case diagram
+test scenerio:what to test
+suppose functionality of log in button of face book to be tested
+test case:
+1)click buttton with out entering login id, password
+2)click by providing invalid id and valid password etc tec
+
+Problems in the other models:
+water fall models:
+-whole phase as to repeact again and again when ever bug comes
+-nothing to show untill end
+-change in requirements add effort and risk
+-if change required like redesign, redevelope then they there is lot of risk in time, money etc
+
+In order to fix these we came accross Agile software
+
+Agile:concept-product owner will decide scope of project
+,inception--once concept is outlined product owner will pick best people for the project
+,iteration--the developers will work with UX designers to combine all part requirments
+,release:almost ready to release and team needs to perform some tests wheather it is fully functional or not,
+maintenance:on going support
+, and retirement:
+
+-iterative: It means same kind of process we can repeat again and again
+-incremental: It means we can add new features when ever required 
+so agile is iterative and incremental.
+-principle:
+-customer no need wait for long time
+-we can accept changes and requirements at any time but it is not possible with other models
+-deliver frequent value to customers
+-we can show something in first sprint
+
+difference between agile and scrum:
+agile:agile is principle with some process
+Scrum:to flow that principle or process scrum is a framework which we build software product by that agile principle
+
+Scrum contains some people they are called srum team(1-9 numbers)
+1)product owner:
+-define features of product 
+-prioritize
+-accept ot reject work results
+
+2)scrum master:
+-he will make everything going fine or not
+-specific role for ficilitating
+
+3)dev team:develops
+4)qa team:writing test cases etc
+
+scrum terminology:
+1)user story: a feature or module in software
+
+2)epic:collection of user stories.
+
+3)product backlog:list of user stories. prepared by product owner, (customers product owner ki estharu requirments, inputs,changes etc)
+
+   nest sprint planning meeting conduct cheystharu
+
+4)sprint planning meeting: what can be deliverd in spirint (e meeting vellu decide aavuthaaru a requirements cheyali first aane)
+  meeting lo commit aayenave sprint backlog lo untaye
+5)sprint backlog:  list of committed stories
+
+6)sprint or iteration :period of time like 2-4 weeks decide by product owner and team
+
+
+daily standup call - what we have done yesterday, what going to do today,road blockers
+
+
+7)scrum meeting /scrum call/ standup call :15min everyday yesterday,today,tommrow task discussion
+
+8)sprint retrospective meeting:conducts after completion of sprint, (to know what challenges we have faced, what lessons we have learned)
+
+9)story point:rough estimation of user stories(0,1,3,5,8fibonacci)
+
+
+Roles:
+-product owner
+-scrum master
+-team
+Artifacts:
+-product backlog
+-scrum backlog
+-burndown charts
+-ceremonies:
+sprint planning
+daily scrum
+sprint review
+
+why do we need agile?
+-accountability to customers
+-early release of benefits
+-continuous improvement
+
+Types of Agile:
+Scrum:
+pillars:
+-transparency:what is going on
+-inspection: check your work as you do it
+-adaptation: ok to change tactical direction
+
+-It is a lightweight framework
+-there are iterations in sprints those sprints are 2 weeks
+-here we have time box
+
+Kanban:
+-Here we have time box
+
+scrum events/agile ceremonies:
+
+-sprint planning -max 8 hours for 4 week sprint
+-daily scrum-15 mins dialy
+-sprint review- max 4hours in a 4 week sprint
+-sprint retrospective-max 3hours in a 4 week sprint
+
+Scrum Artifacts:
+-Product Backlog
+-Sprint Backlog
+-Sprint Goal
+
+Jira:Jira supports both scrum and kanban
+-It is project management tool
+-For tracking all type of issues and bugs, raise tickets
+-Jira is multi-language tool like english, french,german
+-jira supports mysql,oracle,postgreSQL
+-it is used create tickets
+
+License and Free Trial
+-Jira not open source tool
+-it is commerical tool and available trail version for a month
+
+Types of issues raised in jira:
+-story of a project
+-task of a story
+-defect
+-bug
+-help desk tickect raising
+-leave request
+
+jira work flow:
+
+open issue-in progress issue-resolve-reopened-close
+
+Dashboard page contains:
+dashboards, projects, issues,boards,create
+
+Dashboard:
+we have -introduction, assign to me, activity stream
+
+projects:in this
+-Current project-by clicking this current project user will get list of issues
+-Recent Project-it display recent project and issues
+-software-it show list of projects
+-business-it shows all business project types
+-view all projects-it displays all projects of logged in user
+-create project-it will accessed by admin , it depends on roles
+
+issues:
+types(subtask:,bug,(epic:a big user story that needs to be broken down),improvement,new future,story,task)
+-search for issues
+-recent issues
+-import issue from CSV
+-My open issues
+-Reported by me
+-Manage filters
+
+Boards:
+-Show case process like agile board or kanban board
+in this we have Recent boards and view allboards
+
+Create:
+By clicking this we will get create issue page
+
+then we have 
+project-
+issue type-
+summary-
+reporter-
+components-
+description-
+
+Page Object Model:
+create a class of page object-functions-returns
+WebElements-driver.findelement(By.name("");(webelement)
+
+we will call this in our script-by creating object
+page object obj=new pageobject(driver)-use this in script-obj.functionname
+
+
+
+
+
+clone an issue: m
+It means to duplicate same issue or to copy same issue
+-create sub task
+-convert sub task are there in create
+Screens:It is arrangements of fields that can be displayed when issue is created,edited,transformed
+
+Burn Down:
+It shows total remaining time to complete sprint
+
+Bank HDFC Bank login 
+priority:High
+severity:High
+
+requirment gathering
+requirment analysis
+query resolution
+test case d
+
+Test scenario: end to end flow 
+test case:it is a document like we having positive and negative testing, different test steps, expected result, actual result, and status of the test case

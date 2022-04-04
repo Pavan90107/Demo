@@ -1,0 +1,29 @@
+(//strong[contains(text(),'Navigation')]/../../../../../../../../../../../..//*[contains(text(),'Other People Actions')]/preceding-sibling::a)[last()-1]
+
+//*[contains(text(),'Position Details')]/../..//input
+
+//*[contains(text(),'Employee Sub-Group')]/../..//div[@role="listbox"]
+
+//span[contains(text(),'Employee Group')]/../../..//p[contains(text(),'Contractor')]
+
+//*[contains(text(),'Organisation Unit')]/../..//*[contains(text(),'CIO')]
+
+//*[contains(text(),'Manager')]/../..//*[contains(text(),'David Bevan')]
+
+//*[contains(text(),'NEXT')]
+
+//*[contains(text(),'Other People Action')]//following-sibling::span//a[contains(text(),'Contractor Starter')]
+
+//*[contains(text(),'Title')]/../../../..//div[@role="listbox"]
+
+//*[contains(text(),'Gender')]/../../../..//*[@role="listbox"]
+
+(//*[contains(text(),'First Name')]/../../../..//*[@type="text"])[1]
+
+(//*[contains(text(),'First Name')]/../../../..//*[@type="text"])[2]
+
+//*[contains(text(),'This Contractor has')]/../..//*[contains(text(),'Never Worked with Serco')]
+
+//*[contains(text(),'This Contractor has')]/../..//*[contains(text(),'Worked with Serco')]
+
+//*[contains(text(),'Country')]/../..//*[@role="listbox"]

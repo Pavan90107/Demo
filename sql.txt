@@ -1,0 +1,54 @@
+DBMS-Data Base Management System
+It will stores files
+It will store less data
+RDBMS-Relational Data base management system
+It will stores the tables
+It will store more data
+
+SQL-Structure query language
+
+DDL-Data Definition Language
+create alter drop truncate rename
+DML-Data manipulation language
+insert,update,delete
+DRL/DQL-Data Retrival/Data query language
+select
+TCL-Transaction control language
+commit, rollback
+DCL-Data control language
+Grant , Revoke
+
+DataBase:it is nothing but storage area
+GUI-Business-Database
+Server-it stores actual data
+client-quiries raaseyde 
+in client we have two types
+-gui
+-command line
+
+Joins:
+inner Join:In these we will get both common in two tables
+Left Join:it will take all values from first table and and matching records from right table
+Right Join:it will take all values from right table and matching values from left table
+Outer Join: combines both tables
+
+Ranking functions:
+select * rank()over(order by marks desc)as 'rank',
+dense_rank()over(order by Marks desc) as 'dense_rank'
+fro students
+
+with CTE1 as
+(select * employeenumber,officecode,salary,
+rank()over(partition by officecode order by salary desc)as 'rank',
+dense_rank()over(partition by officecode by salary desc) as 'dense_rank'
+row_number()over(partition by officecode by salary desc) as 'row_number'
+from employees)
+
+ select * employeenumber,officecode,salary from CTE1
+where CTE1.dense_rank in(1,2)
+
+
+
+
+
+

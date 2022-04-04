@@ -1,0 +1,18 @@
+a!localVariables(
+  local!data : rule!OBR_AllRequested(),
+  local!status : index(local!data, "status"),
+  local!actualsalary : index(local!data, "actualsalary"),
+  local!expecetedsalary : index(local!data, "especetedsalary"),
+  local!requesteddate: index(local!data,"createdby"),
+  length(
+    a!forEach(
+      items: local!status,
+      expression: if( 
+        todatetime(local!requesteddate[fv!index]) >= now()-7,
+        if( tointeger(local!actualsalary[fv!index]) > tointeger(local!expecetedsalary[fv!index]),
+        append(local!status[fv!index],""),{}),{}
+      )
+    )
+  )
+
+)

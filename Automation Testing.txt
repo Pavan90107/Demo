@@ -1,0 +1,235 @@
+Automation Testing:
+
+
+-To save time we use automation testing mainly
+
+
+Benifits:
+
+Testing Tools:
+-Selenium
+-Appium
+-UFT
+-Parasoft
+-Autolt
+
+Selenium:
+Introduction: why selenium?
+-selenium is automated testing suite for web application like facebook, twitter
+-selenium is open source
+-selenium can use in internet exploxer, google chrome, mozilla and more over it used in mobile application,ios
+-selenium can use in open platforms like windows,linux,etc
+-selenium is supported for c#,java,perl,php,python and ruby
+-automation testing covers both functional and performance test on an application
+
+Disadvantages:
+-Do not support desktop applications
+-selenium open source so if we got problem we can not report any body so we need depend on seniors
+-testing not possible on images
+-no one responsible for features usage because they may or may not work
+
+Components:
+4 components:
+1)Selenium Integrated Development Environment(IDE):
+-It provides playback and record functions(we can export this coding languages like java,c#)
+-It is simplest framework to use in selenium
+-it is easy to use, we can use it in only google chrome and firefox
+
+2)Selenium  Remote Control(RC)-Now deprecated
+
+3)Selenium Web Driver:
+-webdriver is most important component in selenium
+-java,c# most used languages
+-Multiple browsers,multiple languages ki connect aavavachu
+-speed
+-simple commands
+
+locators:8-address to identifies a web element
+-id
+-name
+-classname
+-linktext
+-partial linktext
+-tagname
+-xpath:xml path language(//tagname[@attribute]
+Types:
+1)Absolute xpath
+2)Relative xpath
+-xpath is one dynamic locator
+-finding elements in Html web page
+-cssselector
+
+4)Selenium Grid
+
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LaunchChrome {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Annadasu.P\\OneDrive - Coforge Limited\\Desktop\\ChromeDriver.Exe");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.google.com/");
+        System.out.println(driver.getTitle());
+	}
+
+}
+
+
+
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LaunchChrome {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Annadasu.P\\OneDrive - Coforge Limited\\Desktop\\ChromeDriver.Exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+        driver.get("https://www.github.com/");
+        System.out.println(driver.getTitle());
+        
+        driver.findElement(By.id("login_field")).sendKeys("apple");
+        
+        
+        
+	}
+
+}
+
+webdriver waits:
+implicit waits:applicable on all the elements
+explicit waits:
+Fluent waits:
+
+TestNG:
+-It is open source automated testing framework
+-NG means next generation
+It is framework developed for java program language
+
+TestNG Annotations:
+-@BeforeSuite
+-@BeforeClass
+-@BeforeTest
+-@BeforeMethod
+-@Test
+-@AfterMethod
+-@AfterTest
+-@Afterclass
+-@Aftersuite
+ @Data provider-particular test ne execute cheyadam kosam in diff data
+ @factory:whole class execute multiple executions
+page object model:
+-creating separate object repository to store object locators
+-for each web page there should be separate page class
+
+BDD TDD
+It is extension of tdd
+BDD:it is collabiration between teams
+-Behavioral Driven Development
+-Given-When-Then technique is used for writing test cases
+
+TDD:
+-Test Driven Development:Test cases valid/pass aayey varaku change cheyse malli excute cheyali 
+  -developers will implement this
+This technique helps to answer a simple question- is the code valid?
+-reduce the amount of time required for rework
+-helps explore bugs or errors very quickly
+
+CUCUMBER:
+-Cucumber defines application behaviour using simple english text, defined by a language called Gherkins
+-Cucumber is BDD Framework tool
+-acceptance tests for web development
+-It will merge specifications and test documentations
+
+Feature files:login.feature , 
+  feature:login to applcation url
+  scenario: provideing valid login details
+  given:url
+  when:id,password
+  then:loginsuccessful
+step definition file:converts future file into appropriate code like it will add functions etc
+
+Tags:
+@abc
+to run in run file
+
+glue: it is the path/location
+
+Test Runner File:to execute feature
+ selenium+java+annotations
+Cheatsheet:
+
+Devops:
+-combinations of development and operations
+-it covers all parts of application
+-agile is part of devops
+alert:
+driver.switchto.alert
+page object model:
+login page + homepage +dashboard
+-pom makes code maintainable
+-pom makes code readable
+-pom makes code reusable
+
+why we need devops?
+-Devops creates efficiency across all tasks
+
+Devops practices:Devoplopment+operations
+plan-code-build-test-release-deploy-operate-monitor
+Devops is combination of culture philosophies,practice and tools that increases an organizations ability to deliver applications and services at high velocity
+-CI/CD main cocepts  attributed are
+-continuous integration
+-continuous delivery and continuous deployment
+-infrastructure as a code
+-monitoring and logging
+-validated learning
+
+ Jenkins:
+-immediate feedback on broken builds
+-Jenkins is one of the most popular open-source tools.
+-continuous integration
+-continuous deployment
+-continuous delivery
+accepatance criteria: the feature what exactly part of application
+
+Jenkins pipeline:
+-a pipeline is a set of interconnected tasks that execute in aspecific order
+build-deploy-test-release
+
+dataprovider: oka test case multiple times ravali untey data provider use cheystham
+factory:rendu test cases leyda akuva test cases multiple times estunde
+
+Handle alert:
+Driver.switchTo().alert().accept();
+
+To Switch Frame:
+Driver.switchTo().frame(1)
+
+drop down value selection:
+select select =  new select(driver.find elementBy .xapth(""));
+select select valuebyindex(1);
+selectselectvalueby visibletest("")
+
+drag and drop 
+From , To (Elements)
+
+
+
+
+DDL-DataDefinition language
+Craete,alter,drop,turncate,rename
+DML-DataManiculation language
+insert,update,delete
+DRL-Data Retrivel 
+select
+TCL-Transaction control language
+commit, rollback
+DCL-Data control language
+grant, revoke

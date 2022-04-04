@@ -1,0 +1,119 @@
+Scenarios to test AC's:
+
+1	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Cancel by Prison
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently" 
+• Journeys: State = <rejected>, Billable = <true> - AC2
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal
+ 
+
+2	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Cancel by Police Station
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently" 
+• Journeys: State = <rejected>, Billable = <true> - AC2
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal
+ 
+
+3	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Cancel by Receiving Court
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently"
+• Journeys: State = <rejected>, Billable = <true> - AC2
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal
+ 
+
+4	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Cancel by Prisoner
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently" 
+• Journeys: State = <rejected>, Billable = <true>  - AC2
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal
+ 
+
+5	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Failure to Collect by Serco
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently"
+• Journeys: State = <rejected>, Billable = <false> - AC1
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal
+ 
+
+6	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Cancel by PMU
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently" 
+• Journeys: State = <rejected>, Billable = <true>  - AC2
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal
+ 
+
+7	Offbail
+Create Offbail to Court movement
+Complete P2 transactions
+Approve return Journey
+DO NOT schedule onto a Van
+OCC user cancels - Cancel by Other
+View API information
+• Move Record: Status = cancelled
+• Move Record: Move type = prison_remand
+• Move Record: Cancel reason = supplier declined to move
+• Move Record: Cancel comment = SERCO created accidently
+• Move Events: MoveCancel = Occurred At = <date and time of cancellation>, Valid = <true>, Created By = <Serco>, Notes = <Move cancel event>, Details = <"cancellation_reason" = >"supplier_declined_to_move" , "cancellation_reason_comment" = > "SERCO created accidently"
+• Journeys: State = <rejected>, Billable = <true>  - AC2
+• Journey Events: JourneyReject = Occurred At = <date and time of cancellation>
+View Portal

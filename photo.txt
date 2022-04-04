@@ -1,0 +1,15 @@
+a!gridColumn(
+  label: "Photo",
+  sortField:'recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{a2e01877-c4bd-4d07-9f66-b318acb47f4a}photo',
+  value: a!imageField(
+    images: {
+      a!documentImage(
+        document: if(isnull(fv!row['recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{a2e01877-c4bd-4d07-9f66-b318acb47f4a}photo']),
+        1,
+        todocument(fv!row['recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{a2e01877-c4bd-4d07-9f66-b318acb47f4a}photo']))
+      )
+    },
+    size: "TINY"
+  ),
+  align: "END"
+)

@@ -1,0 +1,17 @@
+a!gridColumn(
+  label: "Resume",
+  sortField: 'recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{73f95cc6-e556-4fce-8782-ea1896fbbb96}resume',
+ 
+  value: if(
+    isnull(fv!row['recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{73f95cc6-e556-4fce-8782-ea1896fbbb96}resume']),{},
+    a!linkField(
+      links: {
+        a!documentDownloadLink(
+          label: document(fv!row['recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{73f95cc6-e556-4fce-8782-ea1896fbbb96}resume'], "name") & "." & document(fv!row['recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{73f95cc6-e556-4fce-8782-ea1896fbbb96}resume'], "extension"),
+          document: fv!row['recordType!{03403b38-15b2-4440-8858-046b2a881b46}OBR_CandidateRecord.fields.{73f95cc6-e556-4fce-8782-ea1896fbbb96}resume']
+        )
+      }
+    )
+  ),
+  align: "END"
+)

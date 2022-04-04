@@ -1,0 +1,13 @@
+Employees---- Elaine
+Medical Fulfillment Team--- Felicia
+Equipment Fulfillment Team--- Frank1
+Director----- Zoya
+
+
+
+
+
+Current password: Coforge@2021
+
+
+http://ec2-3-141-139-230.us-east-2.compute.amazonaws.com:8080/suite/tempo/news

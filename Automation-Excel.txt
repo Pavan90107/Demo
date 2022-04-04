@@ -1,0 +1,91 @@
+parent frame- when we use driver.switchTo().parentFrame()-it will go to iframe parent
+default frame-when use driver.switchto().defaultcontent()-It will switch to default content in the window
+
+approach-driver.switchto().frame(number)
+
+WebDriverManager.chromedriver().setup();
+WebDriver driver = new ChromeDriver();
+
+findElement()-returns first element(when multiple elements there)
+
+ throws exception when no element is present   
+           
+findelements()-returns all the elements
+
+do not through exception
+
+File not found exception- it is raised when file not access or opened
+
+InterruptedException-It is thrown when a thread is waiting,sleeping
+
+IO Exception-it is thrown when an input-output operation is failed
+
+to handle popups:
+
+driver.getwindowhandle()-when web page is loaded we can handled main window by using it
+driver.getwindowhandles()-for windows-
+
+javascriptexecutor js = javascriptexecutor driver
+js.executeScript(windows.scrollby(0,250)
+
+
+javascriptexecutor js = javascriptexecutor driver
+js.executeScript(document.getelementbyid(user).value='tester');
+
+Switch to a specific window::>
+
+ArrayList<String> newTab=new ArrayList<String>(driver.getWindowHandles());
+// driver.switchTo().window(newTab.get(1));
+arrayist-add and access data
+linkedlist-we can munuplate the data
+hashset-it has unique data
+hashmap-a very useful data structure for mapping some arbitary data
+
+-To count no of links in page we use find elements method
+
+
+List<WebElement>links=driver.findElements(By.tagname("a");
+system.out.println("no of links" +links.size)
+
+Tags: if we need execute or skip particular scenario or under a specific test that we use tags
+
+Absolute Path:It contains complete path from root element
+it start from / 
+Relative path:It contains path from reference element to desired element
+it start from //
+
+
+locators:
+id,name,tagname,classname,linktext,partial linktext,xpath,css selectors
+
+
+WebElement:any thing that present on page is webelement
+
+
+get()-It is used to navigate particular url and wait until the page load
+put()-It is used to navigate particular url and wait do not until the page load
+
+alias:these are used to give tempory name to table or column
+
+
+try:try statement define code block to run
+catch:defines code block to handle error
+finally:it is defines runs regardless of result
+
+Dta driven framework:it is nothing but the input values are read from data files and store values in script
+
+Final:It is keyword which used in varible method class which we can not change after declareing
+
+finally :it is ablock that run even we get exception or not
+finalize:it is method in java which is used to peform clean up just before object is garbage collected
+
+Access modifiers:these are keyswords in object-oriented languages
+public, privite,protected and default
+
+product owner, scrummaster and development team
+
+Equal=Method
+==Operator
+
+
+Abstraction:	In Page Object Model Design Psttern locators rastam kaada aave malli main script means data defintions lo use that is ntg but hiding

@@ -1,0 +1,317 @@
+My name is pavankumar i completed my BE in saveetha school of engineering which is in chennai.
+later i got placed in coforge then for last one half 1month i got trained in the appian
+with hands on two pratice i have completed two pocs is one zoo management application, and another one one is employee onboarding
+here zoo management application means to check wheather grond reality is normal or not for this we have four personas employee,fullfillment,director,admin.
+and in same in employee onboarding we have created few interfaces and processmodel for l1,l2,hr,hr approval.
+and i also completed my l1 certification for appian
+process model is place holder for data which can be used through the process ,it transfers the data from one process to another ,pv!
+activity class parameter  local used placeholder which can locally used is variable
+web apis: here web apis are used expose data to outside systems,API-application programming interface
+integrations:are used take data from third party persons
+performance:Time taken between send request and receive responce
+
+
+
+Best Pratices of Processmodel
+1) Configure alerts settings in the process model
+in real time application we want any failure go to product support team so that we configure this
+2)Configure data management settings 
+process instances which are required can be archived here
+process  instances which are not required can be deleted
+3)we can give dynamic names for nodes in the processmodel
+4)we can give process display name dynamiclay
+API Key authentications used for web apis
+basic authrntications can be used for appian creditionals
+
+Best Pratices of sail?
+Self assembling interface layer
+Sail: Self-Assembling Interface Layer.
+Best practices for interface:
+1. Performance
+2. Local variables (Minimise the use of local variables)
+3. Iterating on local variables(minimise)
+4. One interface shouldn't have more fields
+\* for comment
+asynchronous:flow do not wait for child process to complete flow
+synchronous:flow wait for child process to complete
+Expression Rules:
+1. Test case for every expression rules.
+2. Shouldn't have huge expression rules (simple logic and shouldn't have multiple requirements)
+3. Expression rules for independent requirements
+Best Pratices of appian?
+1).giving naming conventions to objects
+2).giving security to application
+3).giving dynamic names for nodes
+4).declare user based alerts, and  data management process
+retrospectivemeeting: in this delivery team will meet the stakeholders,maintechies how to become more efficient
+unit testing:to check wheather the values are behaveing as expected in various conditions
+
+latest version of appian, features, challenges u faced
+the time taken between to send request receive responce is nothing but performance
+examples:diwali sale in amazon filpkart etc
+smart services are specilized business services like email,create folders,calling integration
+subprocess
+synchoronus-wait for child process
+asynchoronouswill not wait for child process
+start process-by default we can have asynchoronous
+velocity in agile:Total of story points completed from each sprint, then divide by the number of sprints. 
+functions:append,update,indexoff,length,insert,date, now(),today(),foreach,all,merge
+agile advantages:
+continues developemnt, continue delivary, any time point of time we can change, interaction with customers
+disadvantages:
+high cost,complex project set aavutunde.
+testing is usally done parallel to development 
+less documentation
+we can not reach requirments is not very clear.
+pros and cons
+here we can drag and drop components.
+access through mobile and pc
+1)appian do not need any third party tools to develoment 
+we can develop the application very fast when compare to other applications
+cons
+here for the use of appian we need to buy license
+error displaying is not good
+appian community not much active because less developer
+safelink -navigation
+dynamiclink- action
+time taken betwen sending request and receiveing responce
+rapid development application tool
+we can build application in a week
+appian,integration
+index,foreach
+safelink,dynamiclink
+safelink:for external webpage we use safe link. links can be used in charts,girds,linkfields
+dynamic link:defines a link that triggers updates to one or more variables
+Triggers:these are statements that automatically execute the data base if any modifications required 
+types:after insert,after update,after delete,before insert,before update,before delete
+Burn down:shows amount of work incompleted
+Burn up:shows amount of work completed
+agile questions
+
+1. Agile ceremonies
+sprint planning,
+sprint review
+sprint retrospective
+1)sprint planning:it is to define what can be develired in the sprint.
+sprint review:it is taken before retro spective meeting, to evaluate latest features
+retrospective meeting: 
+2. scrum artifacts
+product backlog
+sprint backlog
+and potentially releaseable product increment
+3. burn up & burndown charts
+burndown:it will shown incomplete or pending things in the project
+burnup:it will show complete things in the project
+4. which is better agile and waterfall
+in waterfall product is tested end of the project it will be burdan for customer, where as in the agile it will be done thriugh out the process
+5. Advantages and disadvantages of agile
+continus development , continues delivery, interaction with  customers
+disadvantages:
+high cost
+less documentation
+6. what is sprint, scrum
+7. backlog refining or backlog grooming session(both are same)
+8. epic, feature, story, tasks
+9. velicity in agile:total story points dived by no of sprints
+10. what is incremental and iterative approach
+incremental means for a picture we can head to body picture and iterarive means changeing colours to pictures
+11. scrum team(roles of agile)
+5-9 numbers together to deliver a product
+12. scrum meeting
+meeting occurs daily at same time and same location to inspect progress
+13. unit testing
+checking intially wheather product is working as our required conditions
+14. sprint zero----
+createing an estimation for product release
+15. story points
+1story point range is 4-12 hours
+
+16. 
+table
+in table we can store data to database
+it is actual table
+it is independent
+view 
+in we can see database through the window of view
+it is virtual table
+it is dependent on table
+
+SQL:Structured query language
+DML-Data Maniculation language
+DDL:Data definition language
+DCL:Data control language
+TCL:Transition control language
+
+DML-insert ,update,delete
+INSERT INTO TABLE_NAME
+VALUES(V1,V2,,VN);
+
+UPDATE Students
+SET User_Name='pavan'
+where student_id='3'
+
+DELETE TABLE_NAME
+WHERE AUTHOR='PAVAN'
+
+DDL-Create,drop,alter,turncate
+create table employee(name VARCHAR(20), Email VARCHAR2(100), DOB DATE);
+DROP TABLE EMPLOYEE;
+ALTER TABLE table_name MODIFY(column_defenitions....);
+TURNCATE TABLE_NAME
+DCL-Grant,Revoke
+GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;
+
+REVOKE SELECT,UPDATE ON MY_TABLE FROM USER1,USER2
+
+TCL:commit,rollback,savepoint
+DELETE FROM TABLE_NAME
+WHERE AGE=25;
+COMMIT;
+DELETE FROMTABLE_NAME
+WHERE AGE ='25';
+ROLLBACK;
+
+
+
+
+joins:
+inner join
+fulljoin
+left join
+right join
+
+
+
+where contains and contains
+in and out parametres in stored procedures
+natural and surrogate key
+
+
+we can add 30 nodes to the process models---best practice
+upto 50 process varibles 
+
+releations in dbms
+
+one-to-one releationship
+example:
+
+person(id,name,age,adress)-table1
+
+passport(id,passport number)-table2
+
+person---entity---passport
+
+one-many releationship
+
+person---having many accounts in bank
+
+many--one releationship
+
+many accounts having to one person
+
+many--to--many
+
+customers-customer can by more than one product
+product-product can by many customers
+
+joins:
+
+inner
+left 
+right
+outer
+
+inner:
+it will display matched values from both tabbles
+SELECT ,,,
+FROM,,
+INNERJOIN,,
+ORDERBY,,
+
+SELECT order.orderid,
+customer.customername,
+order.orderid,
+from order,
+innerjoin customer
+ON
+customer.customerid=order.orderid,
+
+left join
+it will return all values from left join and matched values from right if no values means it will give null values
+SELECT Orders.Orderid,
+customer.customername,
+order.orderdate
+FROM orders
+LEFTJOIN cstomers
+ON
+order.customerid=customer.customerid;
+orderby customer.customername;
+
+select order.orderid,
+customer.customername,
+order.orderdate,
+From customers,
+leftjoin orders
+oncustomer.customerid=orders.customerid
+orderby customer.customername;
+
+
+right join
+right join it will give all values from right join and matched values from left if no values matched means it will give null 
+SELECT,,
+FROM,,
+RIGHTJOIN,,
+ORDERBY,,
+
+outer join
+it will connect all matched values in both tables.
+SELECT,,
+FROM,,
+OUTERJOIN,,
+ORDERBY,,
+
+CREATE PROCEDURE
+SelectAllCustomers
+AS
+SELECT * FROM Customers
+Go;
+
+SELECT * FROM CUSTOMERS
+
+stored procedure 
+examples:
+
+CREATE PROCEDURE
+selectallcustomers
+AS
+SELECT * FROM Customers
+Go;
+
+create table_name;
+drop tabel
+alter table modify
+alter table tablename
+turncatetable table_nameINSERT INTO TABLE_NAME(coloumn1,column2,column3,,,columnn);
+VALUES(VALUE1,,,,,VALUEN),
+
+UPDATE TABLENAME
+SET Column1=volumn1,column2=value,,,columnn=valuen),
+where
+
+delete table name
+where id=3
+
+GRANT SELECT ON Users to Sam@admin; it will provide access
+
+revoke select update on student
+from bba mba
+defines a link that used in external web page,it used charts,images,linkfieldsetc
+defines a link that triggers to update one or more variable
+index s are used to reterive data from database more
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+ Scenario: Add Tariff plan to customer
+    Given click on add tariff plan to customer
+    Then customer id
+    And click on submit
+    And Select Tariff plan
+    And Click on Add Tariff plans to Customer
+
+@Given("click on add tariff plan to customer")
+	public void click_on_add_tariff_plan_to_customer() {
+		
+		
+	}
+
+	@Then("customer id")
+	public void customer_id() {
+		driver.findElement(By.xpath("//a [@href='assigntariffplantocustomer.php']")).click();
+		
+		driver.findElement(By.id("customer_id")).sendKeys("104733"); 
+		
+
+	}
+	
+	@Then("Select Tariff plan")
+	public void select_tariff_plan() {
+		driver.findElement(By.xpath("//label[@for='sele']")).click(); 
+	  
+	}
+	@Then("Click on Add Tariff plans to Customer")
+	public void click_on_add_tariff_plans_to_customer() {
+		driver.findElement(By.xpath("//input[@value='Add Tariff Plan to Customer']")).click(); 
+	   
+	}

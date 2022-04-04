@@ -1,0 +1,137 @@
+CREATE VIEW View_Name AS
+SELECT Column1, column2, ..
+FROM table_name
+Where condition;
+
+
+Example:
+
+Table name = P_Order
+
+CREATE VIEW ApkView AS
+SELECT OrderID, OrderDate
+FROM P_Order
+WHERE 'OrderID'= '1';
+
+EXAMPLE:2
+
+CREATE VIEW ApkEmpView AS
+SELECT Name, Gender
+FROM ApkEmp
+WHERE Gender= 'MALE';
+
+joins
+inner join:
+
+SELECT`Name`,`Gender`
+FROM ApkEmp
+JOIN ApkDept
+ON ApkEmp.`deptid`=ApkDept.ID
+
+
+SELECT`Name`,`Gender`
+FROM ApkEmp
+LEFT JOIN ApkDept
+ON ApkEmp.`deptid`=ApkDept.ID
+
+
+SELECT`Name`,`Gender`
+FROM ApkEmp
+RIGHT JOIN ApkDept
+ON ApkEmp.`deptid`=ApkDept.ID
+
+
+SELECT`Name`,`Gender`
+FROM ApkEmp
+FULL JOIN ApkDept
+ON ApkEmp.`deptid`=ApkDept.ID
+
+stored procedure syntax
+
+CREATE PROCEDURE ApkEmps() 
+BEGIN
+
+SELECT Name,Gender FROM ApkEmp
+WHERE `Gender`='Male' ;
+END
+
+
+CREATE PROCEDURE AnnaOrder()
+BEGIN
+SELECT `CustomerID`,`EmployeeID` FROM AnnaOrders
+WHERE `CustomerID`='2';
+END
+
+TRUNCATE TABLE Annadasu;
+
+INSERT INTO Annadasu (`id`,`name`,`rating`,`funny`)
+VALUES (1,2,3,4)
+
+FOR MORE THAN 1ROW
+
+INSERT INTO Annadasu (`id`,`name`,`rating`,`funny`)
+VALUES (8,2,3,4),(9,4,5,6),(7,8,9,3)
+
+DELETE FROM Annadasu WHERE
+`name`='8';
+
+UPDATE Annadasu
+SET
+`name`= '0',`rating`='0',`funny`='0'
+WHERE
+`id`=9;
+
+CREATE TABLE Demos (
+
+Id INT,
+Name varchar(10));
+
+ALTER to add column:
+
+ALTER TABLE Annadasu
+ADD Email varchar(255);
+
+DROP Column:
+
+ALTER TABLE Annadasu
+DROP COLUMN Email;
+
+DROP TABLE DEMOS(TABLENAME);
+
+Createing index:
+
+CREATE INDEX AnnadasuIndex
+ON Annadasu (`name`,`rating`,`Email`,`DateOfBirth`);
+
+
+VIEWS:
+
+INSERT:
+
+INSERT INTO AnnaCustomersview (`CustomerID`,`CustomerName`,`ContactName`,`Country`)
+VALUES (6,'ant','pan','ram')
+
+More than one row inserting:
+
+INSERT INTO AnnaCustomersview (`CustomerID`,`CustomerName`,`ContactName`,`Country`)
+VALUES (7,'ch','rh','kh'),(8,'we','see','jk')
+
+UpdateView:
+
+UPDATE AnnaCustomersview
+SET
+`CustomerName`= 'am',`ContactName`='pm',`Country`='km'
+WHERE
+`CustomerID`=7;
+
+DELETEDATA FROM VIEW:
+
+DELETE FROM AnnaCustomersview
+WHERE
+`CustomerID`='8';
+
+TRUNCATE is not working in view
+
+
+
+

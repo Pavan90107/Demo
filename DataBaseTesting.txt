@@ -1,0 +1,159 @@
+Defect Life Cycle:The Tester will raise the defect it will go to test lead he will review the defect, if he think the defect is valid means then he will assign developer
+ then developer will work on the defect then defect status is in development once fixing has been done ,developer will assign the defect to build team, build team deploe defect in testing environment
+test lead/test team test the defect if think defect is working fine he will close the defect
+
+Defect:defect is ntg but variation between expected and actual result is known as defect
+Tester will raise defect the defect status will be new and it will go to test lead test lead will verify the defect and then if it is valid means he will assign it to the develope then developer will develop the defect that the defect status is dveloping and then developer he will
+Then developer will assign to build team here build team will deploy the defect to test lead lead or tester so that the defect is test by tester if he think that defect got resolved he marks that as close 
+
+Defect:Defect means variance actual and expected result
+tester will raise the defect
+-it will go test lead
+-then the if defect is valid then he will send it to developer
+developer will develop the defect here defect is in development status
+then after developer send it to build team build team will diployeit to qa team
+-then team lead or tester will test the defect then if think defect got resolve then he close it
+-if think defect is still there then he will reopen the defect the defect status is reopened
+
+
+Version:Version: 2021-03 (4.19.0)
+
+DataBaseTesting:
+
+It is a software testing that checks tables,schema,triggers etc
+
+Types:
+
+WhiteBoxTesting 
+
+-In white box testing we have schema testing:it is ng but dealing structure of the table
+-check database schema
+-check table naming
+-checking no of columns
+-checking column names
+-checking datatype
+-checking size of columns
+-checking null fields
+-column keys checking
+
+show tables;
+information_schema
+Metadata:Data about the data
+
+storedprocedure:
+already stored code which we can use again and again
+-block of multiple sql commonds
+
+-It will execute all commonds at one go
+Delimiter
+create procedure ABC()
+begin
+---;
+---;
+---;
+end//
+delimiter;
+
+
+For customer table:
+delimiter//
+create procedure selectAllCustomers()
+begin
+select * from customers;
+end//
+delimiter;
+
+call SelectAllCustomers();
+
+For calling one parameter
+delimiter//
+create procedure selectAllCustomersByCity(In mycity varchar(50))
+begin
+select * from customers where city=mycity;
+end//
+delimiter;
+
+call SelectAllCustomersByCity('Singapore');
+
+For calling two parameter
+For calling one parameter
+delimiter//
+create procedure selectAllCustomersByCity(In mycity varchar(50), In Pcode varchar(50))
+begin
+select * from customers where city=mycity and postal code=Pcode;
+end//
+delimiter;
+
+call SelectAllCustomersByCity('Singapore');
+For IN-OUT
+delimeter //
+create procedure get_order_by_cust(
+In Cust_no Int,
+OUT shipped INT,
+OUT Canceled INT,
+OUT resolved INT,
+OUT disputed INT)
+
+Scenario for storedprocedure:
+Check storedprocodure exists in database
+Checking wheather Storeprocedure with valid input data
+Check stored results as expected
+Checking wheather it inserting data properly or not
+Checking wheather updating data or not
+Checking delete data or not
+Checking calling procedure from another stored procedure
+
+
+Triggers:
+A Trigger is My sql object that activates when an event occurs
+-must be unique within a database
+
+Before-Insert
+Before-Update
+Before-Delete
+After-Insert
+After-Update
+After-Delete
+
+Insert,update,delete(either before and after)
+
+syntax:Create trigger triggername
+Before insert on employee
+For each row
+Insert into employees_audit()
+
+For multiple trigger
+
+We use 
+Delimiter //
+syntax:Create trigger triggername
+Before insert on employee
+For each row
+Begin
+Insert into employees_audit()
+End//
+Delimiter//
+
+Trigger Testing Scenarios:
+-Checking wheather trigger update data correctly once they have executed
+-Wheather the required conventions have been followed during codeing phase of triggers
+validation of insert/update/delete functionality
+-Show Trigger() is used open triggers
+
+ in schema we have table,table columns,views,storedprocedure,functions and triggers
+and BlackBoxTesting
+
+in black box we have
+
+- functional
+in this DML Operations
+GUI
+DataMapping
+DataIntegrity
+keys
+
+ and non functional testings
+Performance testing
+security testing
+
+

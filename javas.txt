@@ -1,0 +1,29 @@
+Abstract class:A class which is declared as abstract is known as abstract class
+
+concrete method
+
+//tagname[text()='']
+
+Changes start date 
+for 1word we write xpath
+
+//tagname[contains(text(),'Changes')]
+
+another way
+//tagname[starts-with(text(),'Changes')]
+
+
+And & or
+
+//tagname[@attribute='value'and text()='value']
+
+follwing-sibilings
+
+//tagname[text()='']/../following-sibling::div//p
+
+multiple values using number
+
+(//tagname[text()=''])[1]
+
+
+//tagname[text()='']/parent::div

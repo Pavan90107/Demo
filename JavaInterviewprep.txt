@@ -1,0 +1,600 @@
+Variables: These are containers for storing values
+
+Localvariable:It is declared inside a function
+#include<stdio.h>
+void main(){
+int a=1;
+}
+Globalvariable:It is declared outside of function
+#include<stdio.h>
+inta=1;
+voidmain(){
+}
+String:
+String name ="Pavan";
+
+int
+int My Num=20;
+
+float:stores floating point numbers with decimals
+float myFloatNum=5.99f;
+
+char 
+char myLetter='D'
+
+boolean
+boolean mybool=true;
+
+DataType:is a special keyword used to allocate sufficient memory space for data
+
+Primitive Data Types:
+It specifies size and type of variable
+They are eight types:
+
+integertypes:
+
+-byte-1bytes
+-short-2bytes
+-int-4bytes
+-long-8bytes
+
+Floating types:
+
+-float-4bytes
+-double-8bytes
+-boolean-1byte
+-char-2bytes
+
+static: we dont need object to access,we can only access static number
+ABC Obj =new ABC();
+here Obj is reference variable or name of object
+-It will store heap memory and stack
+
+Interface: WebDriver is an interface it is a deal/bond with this it provide requred actions
+
+Non static:we can access both static and non static number which is present in a class
+Derived DataType:stores multiple values of same type 
+int[]={10,20,30};
+
+	User defined data type:
+Student s= new Student();
+
+OOPS:Object Oriented Programming 
+-It aims to implement real world entites like
+Class:A class ntg but a blueprint which will not occupies real space
+object: Dog it will occupies space
+
+public class Dog
+ String name;
+ String Breed;
+int age;
+String colour;
+        -Abstration:hiding all the impletion details
+        -Inheritance:parent class to child class we use keyword extends in inheritance, simple,multi,multiple,hierachy
+        -Hiding,
+        -polymorphism:task performed in diff ways
+-Many forms 
+Example:
+//class
+public class Animal{
+//Method
+public void Sound(){
+System.out.println("animal is making sound");
+}
+}
+//class
+public class Horse extends Animal{
+//Method
+public void Sound(){
+System.out.println("neigh");
+}
+}
+//class
+public class Cats extends Animal{
+//Method
+public void Sound(){
+System.out.println("mew");
+}
+}
+
+
+
+
+
+
+two types:-compile-timepolymorphism-It is known as static polymorphism
+            Implemented through method overloading
+            -It is static 
+          -Runtime polymorphism
+              Implemented through method overriding
+               It is reffered as dynamic
+Access Modifier:From where it can be accessed in your application
+
+public:It will access from all classes
+
+protected:accessible with in package
+
+private: accessible with in class
+
+default:accessible with same class and package
+
+instance class: it is a general class consist of data members and methods we can call them by objects
+in general memory allocation is object oriented for instance class
+
+
+
+static class: it is general class consist of data members and methods but they are static
+in general memory allocation is class oriented for static class
+//package 
+//outer class
+//inner class-for this we can write static 
+//method
+//main method
+//object
+outer.inner static class obj = new outer.inner static class
+//calling method
+
+
+interface class:it is also class but it is having method declarations with out bodies or implementation
+example:webdriver
+
+Abstract class:Abstract class is ntg but group of abstract methods and non abstract methods
+-abstract key word is used to create abstract class
+-in Non abstract class abstract method should not be present
+-we can not create object for abstract class
+-we can create object for abstract child class
+
+package
+abstractclass
+abstract method
+non abstract method
+child class
+ we will call main abstract method in child class
+main class
+main method
+object
+calling methods
+
+
+Control statements:Decision making statements
+-if statements:if, if-else,if-else-if,nestedif
+-loops-for,while,do whileloop
+-break,continue
+
+
+
+is a releationship and has a releationship:
+
+
+//Here we have blood releation where child class extends from parent
+inheritance
+class a
+{}
+class b extends class a
+{
+}
+
+Assorcation:
+class a
+{}
+class b 
+{
+a obj = new a();//we will from object so there is no coupling or blood releation
+}
+
+aggregation:weak bonding
+compostion:strong bonding
+
+car-music player-weak bonding
+car-engine-strong bonding
+
+
+Final:It is access modifier, It is keyword
+-It will restrict the variables,methods,class
+
+
+Finally:It is a block in exception handling
+-It will print run the code even exception occurs
+
+Finalize:It is a Method in objects
+-It will clean up processing just before object is collecting garbage
+
+
+
+Jenkins:Jenkins is a continuoes integration/continuous delivery and deployment automation software devepos tool written in java programming language
+
+Github:used for version control cheystunde ,more than one prerson unde vallue cheseysina code by git they will send to github It enables software development teams to have multiple local copies
+-Git-It will maintain multiple versions of same file
+-It is platform independent
+-It is free and opensource
+-handle large projects effeciently
+-gitbranch-git branch command will create,list,rename ans delete branchs
+-Git init
+-Git clone
+-Git add
+-Git commit
+-Git status
+-Git push
+-Git pull
+
+SVN Reositories:It stores all files and directories of a single project or may be collection interreleated project
+
+
+
+select dropdown:
+
+Select ABC=new Select(driver.findElement(By.name("country")));
+ABC.selectbyvisibletext("antartica")
+ABC.selectByvalue("")
+ABC.selectByindex("")
+
+
+
+without select
+//getting list of elementsin xpath
+List<WebElement>opt=driver.findElements(By.xpath("");
+int s=opt.size();//Iterating through the list selecting required options
+for(i=0;i<opt.size();i++){
+if(opt.get(i).getText().contains("")){
+opt.get(i).click();
+break;
+}
+
+Hooks are ntg but block of code that run before and after each secario
+
+selenese is the language used to write selenium commands ,used to test web applications
+
+
+Archetype:It is templete provided by maven to create a project 
+
+FileInput stream:we willread data fromexcel
+Fileoutput stream:we write data from excel
+
+DataDriven FrameWork:It will read input values  from datafiles stores in to variables in test scripts
+
+Collections in Java:Collections in Java is a framework , that store group of objects
+
+Java collection framework provides many
+- Interfaces like set,List,Queue,Deque
+-Classes-ArrayList,Vector,LinkedList,PriorityQueue,HashSet,LinkedHashSet, Treeset
+
+Array:At a time we can store n number of values of same datatype
+
+int rollno = new int[100];
+
+Iterator:It is an Interface
+-used t modify the elments
+Three Methods:hasNext(),next(),remove()
+
+Collection-Interface-with basic methods add(),remove(),contains,isempty(),addall()
+
+1)List-Interface-It can contain duplicate values
+-Elements are ordered
+-We canaccess any element from its index
+
+ArrayList,LinkedList is a subclass for List Interface
+
+2)Set-Interface-It can contain only unique values
+Hashset,Treeset,LinkedHashSet
+poups:
+we use autoIt getwindowhandle and get window handles
+Webalerts:
+
+driver.switchto().alert().dismiss();
+driver.switchto().alert().accept();
+
+Assert command:If validation fails it will stop execution of method
+Verify command:If validation fails still it execute the method
+//Tagname[@Attribute='value']
+//Tagname[starts-With(text(),value)]
+//Tagname[contains(text(),value)]
+//Tagname[@type='button'][1]
+//input[@type='button'and @value='Back']
+//input[@type='button' or @value='Back']
+//input[@type='button]/../followingsibiling::div//p
+//a[contains(text(),'Gmail')]
+//span[text()='FTE Salary']/../following-sibiling::div//div
+
+Assert:If the assert is true it will go for further if assert is false means it will fail
+Verify:In this assert is true or false it will execute for further
+
+@DataProvider:It will run the test method by using data provided by data provider
+
+@DataProvider
+public object[][] main(){
+return new object {{pavan,1}}
+}
+
+@Factory:It will run  multiple test cases using  in by using one test class
+@Factory
+public object[] main(){
+return new object
+
+
+
+By using Robot class we use to handle windows based popup
+AutoIT:Robot robot=new Robot();
+robot.keyPress(KeyEvent.VK_CNTROL)
+robot.kryPress(KeyEvent.VK_C)
+robot.keyPress(KeyEvent.VK_CNTROL)
+robot.kryPress(KeyEvent.VK_C)
+
+10 secnarios we writen 
+in a feature file.
+3types
+-central,local:it will download local jar files and ,remote
+
+driver.get-it will wait till the page load
+driver.navigate-it will not till page load
+
+directly we send the data,datatable,using excel we will send data
+
+BackGround KeyWord:It is precondition for scenario
+DataTable:It is used for specific steps
+In ExampleTable:It
+
+java script executor js = (java script excecutor)
+page loadtimeout()=latency
+if we want run two tags at one time=in tags{tag1,tag2}
+Maven :In this we will have maven dependency's
+
+Page object Model:In these we separating objects,functions,it reduces code duplication and improves test performance
+
+in driver.get()-it will wait page to load
+in driver.navigate.to()-it will not page to load
+Implict:It is global wait that applies to all elements of a web page
+it is used to tell webdriver to wait for such amount of time before through no such element exception
+Explicit:
+ is used to tell the Web Driver to wait for certain conditions
+
+Fluent: is used to define maximum time for the web driver to wait for a condition, as
+
+Maven Repositories are physical directories which contains packged JAR Files
+
+Local Repository:It will be in developers machine only
+maven will ownload repositories from remote servers  and store them in to developer machine
+
+central repository:Maven central repository is located at http://repo.maven.apache.org/maven2/. Whenever you run build job, maven first try to find dependency from local repository. If it is not there, then, by default, maven will trigger the download from this central repository location.
+
+Excel sheet,hard coding in feature file,exampletable,json files 
+
+static:it is used when we do not want create object for that
+it is used to memory management
+it is used to store memory only once
+
+
+class student{
+int roll no;
+String name;
+static String College="narayana";
+Student(intr, int n){
+rollno=r;
+name=n;
+}
+-WebDriverManger will automate the browser, it will update  chrome version automatically 
+Final:It is keyword we use before class,method, variable so that the value is fixed
+
+,Finally:it is a block it will run even exception occurs or not
+,Finalize:garbage collector on an object
+
+DataProvider:It will the one test method by using data provided in data provider
+which is object[][] dimension
+Factory:it will run multiple methods by using single test class
+
+HashMap:It has Key-Value pairs
+
+System.SetProperty("webdriver.chrome.driver","path.exe")
+driver= new chromedriver();
+driver.get("URL")
+GetWindowHandle:It will return the current window open tab/window, the return type for window handle is string
+getwindowhandles():it will return curent and child window or tab , for this it is set<string>
+
+To Handle FileNotFoundException:we need to use try catch block,in try we will write line of code t throw exception where as catch block will handles it
+
+Interputed exception:handle by thread.sleep()
+
+generic catch block can handle all the exceptions. Whether it is ArrayIndexOutOfBoundsException or ArithmeticException or NullPointerException or any other type of exception, this handles all of them.
+
+//Launching a browser
+Using SetProperty
+package {
+class name{
+System.SetProperty("WebDriver.chrome.driver","path.exe");
+driver=new chromedriver();
+driver.get("URL");
+
+}
+}
+
+---------------
+Using WebDriverManager:
+WebDriverManager.chromedriver().setup();
+driver=new chrome driver();
+driver.get("");
+-----------------------------------------
+
+Using Propfile:
+WebDriverManager.chromedriver().setup();
+driver=new chromedriver();
+Properties Prop=new properties();
+Prop.load(new FileInputstream("Propertiespath"));
+driver.get(Prop.getProperty("url");
+
+Constructor:
+-no return type
+-same class
+Types
+parameterize constructor(int a, int b)
+
+Super:It is used to access method from the Parent class by using super.variablename
+
+this:it is used to access method from from current class
+
+public:by using we can access outside of packages and and also with in the packages
+private:by this we can access with in the class only
+protected:by this we can access in particular package and +subclass of another package
+default:it will be access through out the package  only not outside
+
+
+
+
+-in string literal it will not create duplicate
+String str="Pavan";//string literal
+-in string class it will create duplicate this is the main difference
+String str1=new String("pavan");//string class
+
+String str="Pavan";
+String str=new String("Kumar");
+
+
+swapping logic:
+with out using third variable:
+a=a+b;
+b=a-b;
+a=a-b;
+
+
+
+//with using third variable
+int a=1;
+int b=2;
+int c=a;
+a=b;
+b=c;
+
+//Date
+
+Date d=new Date();
+SimpleDateFormat sdf=new SimpleDateFormat();
+String str=sdf.format(date);
+System.outprintln(str);
+
+To add Date
+Date d=new Date();
+Calendar c=Calendar.getInstance();
+c.setTime(d);
+System.out.println(d.tostring());
+c.add(Calendar.Month,1);
+System.out.println(c.getTime().toString());
+--ArrayList and Linked List will store the duplicate values 
+the main difference arraylist will store only values and linkedlist will store both addresses and values
+-manipulation is slow in arraylist
+-manipulation is fast in linked list
+----ArrayList---
+ArrayList<String> al=new ArrayList<String>();
+al.add();
+al.add();
+System.out.println(al);
+--Iterator-
+Iterator<string> i=al.iterator();
+while(i.hasNext()){
+System.out.println(i.next());
+}
+
+----LinkedList----
+LinkedList<String>ll=new LinkedList<String>();
+ll.add();
+
+Iterator<String>i=al.iterator();
+while(i.hasNext()){
+i.next())
+}
+--------------
+a=a+b;
+b=a-b;
+a=a-b;
+--------
+-----------------------------------
+String str1="Pavan";
+String str2="";
+for(int i=str1.length()-1;i>=0;i--){
+str2=str2+str1.charAt(i);
+
+}
+System.out.println(Str2);
+----------------------
+
+
+Date d=new Date();
+Calendar c=Calendar.getInstance();
+c.setTime(d);
+System.out.println(d.toString());
+c.add(Calendar.Month_ofYear,1)
+System.out.println(Add 1Month after=+c.getTime().toString());
+--------------
+FileWriter fw=new FileWriter("pavanlog.text");
+fw.write("hi hello");
+fw.close();
+------------------------
+File f=new File("pavanlog.txt");
+Scanner s=new Scanner(f);
+while(s.hasNextLine()){
+System.out.println(s.NextLine());
+}}}
+-------------------------------------
+Operators
+Arithmetic-+,-,*,/,%,++,--,-=,
+Bitwise-&,~,<<,>>
+Relational-==,!=,>,<,>=,<=
+Logical-&,|,^,||,&&
+Assignment-=
+
+--------------------------------------
+Duplicate values finding
+
+int[] arr={2,3,4,2,3};
+S.O.P("Duplicate values:");
+for(int i=0; i<arr.length;i++){
+for(int j=i+1; j<arr.length; j++){
+if(arr[i]==arr[j])
+S.O.P(arr[j]);
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
